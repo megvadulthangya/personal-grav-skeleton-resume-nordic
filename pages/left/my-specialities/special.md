@@ -1,15 +1,17 @@
 ---
-title: MY SPECIALITIES
-date: 13:34 05/21/2014 
+title: KOMPETENCIÁK
 specialities:
-    - icon: lightbulb
-      text: Logo Design
+    - icon: eye
+      text: Rendszerszemlélet
       animation: fadeInDown
-    - icon: page-multiple
-      text: Branding 
+    - icon: wrench
+      text: Deep-Tech
       animation: fadeInUp
-    - icon: results
-      text: Minimal Web Design
+    - icon: book
+      text: Önálló tanulás
+      animation: fadeInUp
+    - icon: lightbulb
+      text: Kreativitás
       animation: fadeInLeft
 taxonomy:
     category: left
