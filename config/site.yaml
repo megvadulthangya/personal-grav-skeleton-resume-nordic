@@ -1,19 +1,34 @@
 title: Gyöngyösi Gábor
 description: IT Systems Integrator | Open Source Developer
+
+# Ez a profilképhez kell (Gravatar)
 gravatar_email: megvadulthangya@gmail.com
+
 author:
   name: Gyöngyösi Gábor
   email: 'gyongyosigabor@gshoots.hu'
+  # Itt már a 2025-ös évszámot használjuk dinamikusan a footerben, de nem árt itt is
+  copyright: 'Copyright 2025 Gyöngyösi Gábor'
+
 metadata:
     description: 'Gyöngyösi Gábor önéletrajza - IT Systems Integrator, Open Source Developer & Hardware Specialist.'
 
+# Ez a jobb oldali link (már új ablakban fog nyílni a sablon módosítás miatt)
 website: "links.gshoots.hu"
 
 address:
     - line: "Budapest"
     - line: "Hungary"
 
-contact: 
-    - line: "gyongyosigabor@gshoots.hu"
-    - line: "+36 50 105 4964"
-    - line: "github.com/megvadulthangya"
+# ITT A LÉNYEG: A "line" helyett részletes adatok kellenek a kattinthatósághoz
+contact:
+    - text: "gyongyosigabor@gshoots.hu"
+      url: "mailto:gyongyosigabor@gshoots.hu"
+      icon: envelope
+    - text: "+36 50 105 4964"
+      url: "tel:+36501054964"
+      icon: phone
+    - text: "github.com/megvadulthangya"
+      url: "https://github.com/megvadulthangya"
+      target: "_blank"
+      icon: github
