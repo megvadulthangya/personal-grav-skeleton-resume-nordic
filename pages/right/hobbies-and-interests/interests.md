@@ -1,34 +1,21 @@
 ---
-title: Hobbies & Interests
-date: 13:34 02/21/2014 
-
+title: ÉRDEKLŐDÉS & HOBBI
 interests:
-    - icon: camera
-      activity: Photography
-      animation: fadeIn
-    - icon: mountains
-      activity: Hiking
-      animation: fadeIn  
-    - icon: book
-      activity: Reading
-      animation: fadeIn   
+    - icon: server
+      text: Home Lab & Self-Hosting
+      url: '#'
+    - icon: code
+      text: Open Source Kontribúció
+      url: '#'
+    - icon: microchip
+      text: DIY Elektronika & IoT
+      url: '#'
     - icon: music
-      activity: Music
-      animation: fadeIn   
-    - icon: trees
-      activity: Walking
-      animation: fadeIn    
-    - icon: paw
-      activity: Dogs
-      animation: fadeIn    
-    - icon: die-six
-      activity: Games
-      animation: fadeIn  
-    - icon: ticket
-      activity: Theatre
-      animation: fadeIn   
-
-
+      text: Zene & Audiofil technika
+      url: '#'
+    - icon: camera
+      text: Fotózás (Sony / Minolta)
+      url: '#'
 taxonomy:
     category: right
 ---
