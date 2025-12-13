@@ -1,18 +1,18 @@
-title: Leo C. Wilhoit
-description: Graphic & Web Designer
+title: Gyöngyösi Gábor
+description: IT Systems Integrator | Open Source Developer
 author:
-  name: Team Grav
-  email: 'joe@test.com'
+  name: Gyöngyösi Gábor
+  email: 'gyongyosigabor@gshoots.hu'
 metadata:
-    description: 'Resume is a free and responsive theme for **Grav**. Its a port of Resume template by HTML5UP.'
+    description: 'Gyöngyösi Gábor önéletrajza - IT Systems Integrator, Open Source Developer & Hardware Specialist.'
 
-website: "getgrav.org"
+website: "links.gshoots.hu"
 
 address:
-    - line: "811 Margaret Street"
-    - line: "28015,"
-    - line: "Sugar Land, TX 77478"
+    - line: "Budapest"
+    - line: "Hungary"
+
 contact: 
-    - line: "LeoCWilhoit@jourrapide.com"
-    - line: "+34 713-902-8117"
-    - line: "@LeoCWilhoit"
+    - line: "gyongyosigabor@gshoots.hu"
+    - line: "+36 50 105 4964"
+    - line: "github.com/megvadulthangya"
