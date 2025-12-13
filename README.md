@@ -54,5 +54,3 @@ docker-compose up -d
 -----
 
 *Copyright © 2025 megvadulthangya*
-
-````
