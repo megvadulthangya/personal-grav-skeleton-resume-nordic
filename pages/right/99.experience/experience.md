@@ -10,7 +10,7 @@ experience:
       <strong>High-Performance Game Server Ops (Oracle Cloud):</strong><br>
       SecOps: DDoS védelem (ServerArk, kernel-szintű UDP szűrés).<br>
       Dev: Lua adminisztrációs eszközök fejlesztése.<br><br>
-      <strong>Manjaro Awesome Edition (Saját OS):</strong><br>
+      <strong>Manjaro Awesome Respin (Saját OS):</strong><br>
       CI/CD: GitHub Actions pipeline ISO buildhez és publikáláshoz.<br>
       UX/UI: Egyedi "Nordic" design.<br><br>
       <strong>Secure Homelab Ecosystem:</strong><br>
