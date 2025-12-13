@@ -1,13 +1,13 @@
 ---
 title: ÉRDEKLŐDÉS & HOBBI
 interests:
-    - icon: server
+    - icon: database
       text: Home Lab & Self-Hosting
       url: '#'
-    - icon: code
+    - icon: social-github
       text: Open Source Kontribúció
       url: '#'
-    - icon: microchip
+    - icon: wrench
       text: DIY Elektronika & IoT
       url: '#'
     - icon: music
