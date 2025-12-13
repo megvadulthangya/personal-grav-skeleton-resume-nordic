@@ -1,7 +1,7 @@
 ---
 title: TECHNIKAI ARZENÁL
 taxonomy:
-    category: left
+    category: right
 ---
 
 #### GenAI & Local LLM Ops
