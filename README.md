@@ -1,4 +1,3 @@
-````markdown
 # 👨‍💻 megvadulthangya - IT Systems Integrator CV
 
 ![Stack](https://img.shields.io/badge/Tech-Grav%20%7C%20Docker%20%7C%20Nord-88C0D0) ![Build](https://img.shields.io/badge/build-passing-brightgreen)
