@@ -33,11 +33,18 @@ The project consists of two parts:
 
 ### Local Setup (Docker)
 
-```bash
-# Clone the repository
-git clone [https://github.com/megvadulthangya/grav-skeleton-resume-site.git](https://github.com/megvadulthangya/grav-skeleton-resume-site.git)
+To run the site locally, you need to clone both the skeleton and the theme into the correct directory structure.
 
-# Start the container
+```bash
+# 1. Clone the Skeleton (Content & Config)
+git clone [https://github.com/megvadulthangya/grav-skeleton-resume-site.git](https://github.com/megvadulthangya/grav-skeleton-resume-site.git)
+cd grav-skeleton-resume-site
+
+# 2. Clone the Theme (Design)
+# IMPORTANT: The theme must be placed in 'user/themes/resume'
+git clone [https://github.com/megvadulthangya/grav-theme-resume.git](https://github.com/megvadulthangya/grav-theme-resume.git) user/themes/resume
+
+# 3. Start the container
 docker-compose up -d
 ````
 
