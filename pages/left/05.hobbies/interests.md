@@ -17,5 +17,5 @@ interests:
       text: Fotózás (Sony / Minolta)
       url: '#'
 taxonomy:
-    category: right
+    category: left
 ---
