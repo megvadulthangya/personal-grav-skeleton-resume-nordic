@@ -1,6 +1,6 @@
 
 ````markdown
-# 👨‍💻 Gábor Gyöngyösi - IT Systems Integrator CV
+# 👨‍💻 megvadulthangya - IT Systems Integrator CV
 
 ![Stack](https://img.shields.io/badge/Tech-Grav%20%7C%20Docker%20%7C%20Nord-88C0D0) ![Build](https://img.shields.io/badge/build-passing-brightgreen)
 
@@ -51,10 +51,10 @@ docker-compose up -d
 ## 📜 Credits
 
   * Based on the [Resume Theme](https://github.com/getgrav/grav-theme-resume) by Fernando Báez.
-  * Customized, containerized, and maintained by **Gábor Gyöngyösi**.
+  * Customized, containerized, and maintained by **megvadulthangya**.
 
 -----
 
-*Copyright © 2025 Gábor Gyöngyösi*
+*Copyright © 2025 megvadulthangya*
 
 ````
