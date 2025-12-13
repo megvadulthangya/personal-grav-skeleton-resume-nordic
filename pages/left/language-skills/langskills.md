@@ -1,19 +1,13 @@
 ---
-title: LANGUAGE SKILLS
-date: 13:34 02/21/2014
-
+title: NYELVISMERET
 languages:
-  - name: Spanish
-    level_name: Mother Language
+  - name: Magyar
+    level_name: Anyanyelv
     level: 100
     animation: bounceIn
-  - name: English
-    level_name: Advanced Level
-    level: 75  
-    animation: bounceIn
-  - name: French
-    level_name: Basic Level
-    level: 25  
+  - name: Angol
+    level_name: Erős szakmai szint
+    level: 85
     animation: bounceIn
     
 taxonomy:
