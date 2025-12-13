@@ -2,7 +2,7 @@
 
 ![Stack](https://img.shields.io/badge/Tech-Grav%20%7C%20Docker%20%7C%20LinuxServer-88C0D0) ![Build](https://img.shields.io/badge/build-passing-brightgreen)
 
-This repository contains the source code (skeleton) for my professional resume website. It is built on **Grav CMS**, utilizing a custom-forked **Nord Theme**, and deployed via **Docker** with a custom Nginx configuration.
+This repository contains the source code (skeleton) for my professional resume website. It is built on **Grav CMS**, utilizing a custom-forked **Nord Theme**, and deployed via **Docker**.
 
 👉 **Live Demo:** [cv.gshoots.hu](https://cv.gshoots.hu)
 *(Note: The resume content itself is currently in Hungarian.)*
@@ -14,8 +14,7 @@ This project demonstrates **DevOps** and **Self-Hosting** competencies by separa
 * **Engine:** [Grav CMS](https://getgrav.org) (Flat-file CMS)
 * **Image:** [LinuxServer.io Grav](https://docs.linuxserver.io/images/docker-grav/)
 * **Theme:** Custom Fork of Resume Theme (Nordic Color Palette)
-* **Web Server:** Nginx (Custom configuration)
-* **Infrastructure:** Docker Compose with Bind Mounts
+* **Infrastructure:** Docker Compose
 
 ## 🎨 Key Features
 
@@ -24,19 +23,35 @@ This project demonstrates **DevOps** and **Self-Hosting** competencies by separa
 * **Smart Contacts:** Clickable phone (`tel:`), email (`mailto:`), and social links.
 * **Responsive:** Mobile-first approach based on the Foundation framework.
 
-## 🛠️ Infrastructure & Deployment
+## 🛠️ Installation & Setup
 
-The project consists of three parts:
-1.  **Skeleton (This repo):** Contains content (`pages`), configuration (`config`), and business logic.
-2.  **Theme ([grav-theme-resume](https://github.com/megvadulthangya/grav-theme-resume)):** Contains Twig templates and CSS assets.
-3.  **Host Server:** Docker environment running the application.
+To replicate this setup, you need to inject the content and theme into a standard Grav installation.
 
-### 🔧 Server Configuration
+### 1. Clone Repositories
 
-The system uses **bind mounts** to inject the application code from the host directly into the container. This allows for persistent storage and easy updates without rebuilding images.
+First, clone the content (skeleton) and the design (theme) to your local machine:
+
+```bash
+# 1. Clone the Skeleton (Content & Config)
+git clone [https://github.com/megvadulthangya/grav-skeleton-resume-site.git](https://github.com/megvadulthangya/grav-skeleton-resume-site.git)
+
+# 2. Clone the Theme (Design)
+git clone [https://github.com/megvadulthangya/grav-theme-resume.git](https://github.com/megvadulthangya/grav-theme-resume.git)
+````
+
+### 2\. Copy Files to Grav
+
+Assuming you have a running Grav instance (or a mounted volume), copy the files to the standard `user` directory structure:
+
+  * **Theme:** Copy the `grav-theme-resume` folder into `user/themes/resume`.
+  * **Content:** Copy the `pages` folder from the skeleton into `user/pages`.
+  * **Config:** Copy the `config` folder from the skeleton into `user/config`.
+
+### 3\. Docker Quick Start
+
+Use this standard `docker-compose.yml` to spin up the environment. Ensure your volume mounts point to the data where you copied the files above.
 
 ```yaml
-# docker-compose.yml snippet
 services:
   grav:
     image: lscr.io/linuxserver/grav:latest
@@ -46,30 +61,17 @@ services:
       - PGID=1000
       - TZ=Etc/UTC
     volumes:
-      # Custom Nginx & PHP config persistence
-      - /docker/grav/appdata/config:/config
-      # Application Logic (Mapped to Host)
-      - /docker/grav/app:/app
+      - ./grav-data:/config  # Maps to the configuration directory
+      - ./grav-app:/app      # Maps to the application root
     ports:
       - 80:80
     restart: unless-stopped
-````
-
-### 🔄 Deployment Workflow
-
-The deployment strategy relies on copying updated files from the local Git repositories directly into the **bind-mounted directories** on the host server.
-
-**Workflow Logic:**
-
-1.  **Source Update:** Pull the latest changes from the Git repositories (Skeleton & Theme).
-2.  **File Injection:** Copy the updated `pages`, `config`, and `theme` files into the host directory that is mounted to `/app` inside the container.
-3.  **Cache Purge:** Manually clear the Grav cache to apply changes immediately without restarting the container.
+```
 
 ## 📂 Repository Structure
 
   * `/config`: Site configuration (system.yaml, site.yaml, security.yaml).
   * `/pages`: The actual content of the CV (Markdown files).
-  * `deploy.sh`: Automation script for syncing Git content to the Docker volume.
 
 ## 📜 Credits
 
