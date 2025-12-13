@@ -30,7 +30,7 @@ experience:
     animation: fadeIn
     description: Teljes körű IT támogatás (Windows/Linux kliensek), hálózat kiépítése. Ügyfélkapcsolattartás angol nyelven.
 
-  - date: 2000 - 2002
+  - date: 2000 - 2002, 2016
     role: Mechanikai Műszerész
     company: 77 Elektronika Kft. / GE Tungsram
     years: 2
