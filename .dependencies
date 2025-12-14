@@ -8,7 +8,7 @@ git:
         path: user/plugins/problems
         branch: develop
     resume:
-        url: https://github.com/megvadulthangya/grav-theme-resume
+        url: https://github.com/megvadulthangya/personal-grav-theme-resume-nordic
         path: user/themes/resume
         branch: develop
 links:
